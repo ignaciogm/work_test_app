@@ -1,0 +1,116 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 3066766 entries, 0 to 3066765
+Data columns (total 19 columns):
+ #   Column                 Dtype
+---  ------                 -----
+ 0   VendorID               int64
+ 1   tpep_pickup_datetime   datetime64[ns]
+ 2   tpep_dropoff_datetime  datetime64[ns]
+ 3   passenger_count        float64
+ 4   trip_distance          float64
+ 5   RatecodeID             float64
+ 6   store_and_fwd_flag     object
+ 7   PULocationID           int64
+ 8   DOLocationID           int64
+ 9   payment_type           int64
+ 10  fare_amount            float64
+ 11  extra                  float64
+ 12  mta_tax                float64
+ 13  tip_amount             float64
+ 14  tolls_amount           float64
+ 15  improvement_surcharge  float64
+ 16  total_amount           float64
+ 17  congestion_surcharge   float64
+ 18  airport_fee            float64
+dtypes: datetime64[ns](2), float64(12), int64(4), object(1)
+memory usage: 444.6+ MB
+
+Calidad de Datos para trip_distance:
+
+ nulos en trip_distance: 0
+count    3.066766e+06
+mean     3.847342e+00
+std      2.495838e+02
+min      0.000000e+00
+25%      1.060000e+00
+50%      1.800000e+00
+75%      3.330000e+00
+max      2.589281e+05
+Name: trip_distance, dtype: float64
+
+Calidad de Datos para tpep_pickup_datetime:
+
+ nulos en tpep_pickup_datetime: 0
+
+Calidad de Datos para tpep_dropoff_datetime:
+
+ nulos en tpep_dropoff_datetime: 0
+
+Calidad de Datos para VendorID:
+
+ nulos en VendorID: 0
+count    3.066766e+06
+mean     1.730215e+00
+std      4.438480e-01
+min      1.000000e+00
+25%      1.000000e+00
+50%      2.000000e+00
+75%      2.000000e+00
+max      2.000000e+00
+Name: VendorID, dtype: float64
+
+Calidad de Datos para total_amount:
+
+ nulos en total_amount: 0
+count    3.066766e+06
+mean     2.702038e+01
+std      2.216359e+01
+min     -7.510000e+02
+25%      1.540000e+01
+50%      2.016000e+01
+75%      2.870000e+01
+max      1.169400e+03
+Name: total_amount, dtype: float64
+
+Calidad de Datos para payment_type:
+
+ nulos en payment_type: 0
+count    3.066766e+06
+mean     1.194483e+00
+std      5.294762e-01
+min      0.000000e+00
+25%      1.000000e+00
+50%      1.000000e+00
+75%      1.000000e+00
+max      4.000000e+00
+Name: payment_type, dtype: float64
+
+Calidad de Datos para RatecodeID:
+
+ nulos en RatecodeID: 71743
+count    2.995023e+06
+mean     1.497440e+00
+std      6.474767e+00
+min      1.000000e+00
+25%      1.000000e+00
+50%      1.000000e+00
+75%      1.000000e+00
+max      9.900000e+01
+Name: RatecodeID, dtype: float64
+Frecuencia Payment_type:
+Payment_type_des
+Credit card    2411462
+Cash            532241
+Dispute          33297
+No charge        18023
+Name: count, dtype: int64
+
+Frecuencia de RateCodeID:
+RateCodeID_des
+Standard rate            2839305
+JFK                       114239
+Negotiated fare            15043
+Newark                      8958
+Nassau or Westchester       4366
+Group ride                     6
+Name: count, dtype: int64
