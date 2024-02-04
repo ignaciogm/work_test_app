@@ -1,16 +1,3 @@
-Como
-    ejecuta programa
-    ejecuta test
-    instala entorno virtual conda venv
-
-como se activa
-como se ejecuta el main 
-como se ejecutan los test
-
-dependencias
-
-pequeña descripcion del proyecto
-
 # Proyecto de Procesamiento de Datos con PySpark
 
 Este proyecto utiliza PySpark para procesar datos de viajes en taxi de la ciudad de Nueva York. El objetivo es realizar diversas operaciones de limpieza y análisis en los datos y almacenar los resultados en un formato estructurado.
